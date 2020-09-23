@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{blindtext}
+
+\title{Tarea 3 Física Computacional I}
+\author{Carlos Andres Granada Palacio}
+
+\begin{document}
+\maketitle
+
+\section*{Gráficas y Análisis}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{XvsT-N.png}
+\includegraphics[scale=0.5]{VvsT-N.png}
+\includegraphics[scale=0.5]{XvsT-A.png}
+\includegraphics[scale=0.5]{VvsT-A.png}
+\caption{Gráficas de posición contra tiempo y velocidad contra tiempo para movimiento armónico libre y subamortiguado}
+\end{figure}
+
+\noindent Las gráficas anteriores funcionan para comparar diferentes conjuntos de párametros y amplitud inicial para osciladores libres y subamortiguados. En las mismas gráficas se pueden ver los párametros respectivos para cada curva. Las ecuaciones son las siguientes:
+
+$$x_S(t) = X_0 \cos \omega_0 t \Rightarrow v_S(t) = -\omega_0 X_0 \sin \omega_0 t$$
+$$x_A(t) = X_0 e^{-\lambda t} \cos \omega_0 t \Rightarrow V_A(t) = -X_0 e^{-\lambda t} (\lambda \cos \omega_0 t + \omega_0 \sin \omega_0 t)$$
+
+Estas ecuaciones nos hacen intuir aquello que está verificado en las gráficas, cuando la condición inicial $y_0$ es más grande, la amplitud de las oscilaciones es a su vez más grande, al igual que cuando $\omega_0$ es más grande la frecuencia de estas oscilaciones es más grande. Así mismo, cuando la masa es más pequeña la amplitud de las oscilaciones decrece más lento en el regimen subamortiguado, cosa que se puede evidenciar en la gráfica 3. 
+\end{document}
